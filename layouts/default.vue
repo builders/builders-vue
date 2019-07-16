@@ -1,7 +1,8 @@
-<template>
-  <div>
-    <main-nav />
-  </div>
+<template lang="pug">
+  div
+    main-nav
+    .container
+      nuxt
 </template>
 
 <script>
