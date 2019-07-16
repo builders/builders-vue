@@ -43,8 +43,6 @@
               <a class="navbar-item">People</a>
               <a class="navbar-item">Relationships</a>
               <a class="navbar-item">Community</a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item">Contact</a>
             </div>
           </div>
         </div>
