@@ -48,6 +48,13 @@
             </div>
           </div>
         </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item">About</a>
+          <a class="navbar-item">Journal</a>
+          <a class="navbar-item">Work</a>
+          <a class="navbar-item">Resources</a>
+        </div>
       </div>
     </nav>
 
