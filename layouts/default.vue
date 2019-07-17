@@ -1,8 +1,7 @@
 <template lang="pug">
   #app
     main-nav
-    .container
-      nuxt
+    nuxt
 </template>
 
 <script>
