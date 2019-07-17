@@ -10,14 +10,18 @@
           Design Influences
         </a>
 
-        <div class="navbar-burger">
+        <div
+          class="navbar-burger"
+          :class="{ 'is-active': showNav }"
+          @click="showNav = !showNav"
+        >
           <span aria-hidden="true" />
           <span aria-hidden="true" />
           <span aria-hidden="true" />
         </div>
       </div>
 
-      <div id="main-menu" class="navbar-menu">
+      <div id="main-menu" class="navbar-menu" :class="{ 'is-active': showNav }">
         <div class="navbar-start">
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Imagine</a>
@@ -57,3 +61,13 @@
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showNav: false
+    }
+  }
+}
+</script>
