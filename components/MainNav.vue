@@ -7,7 +7,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          Design Influences
+          <strong>Design Influences</strong>
         </a>
 
         <div
