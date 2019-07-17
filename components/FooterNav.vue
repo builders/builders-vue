@@ -45,10 +45,17 @@
               a Community
             .footer-link
               a Social Architecture
-      .social-media
-        a.instagram
-          i.fab.fa-instagram
-      p.siteinfo Site design by Stephen Bau, Builders Collective
+      .siteinfo
+        .social-media
+          a.medium(href="https://medium.com/builderscollective")
+            b-icon(icon='medium')
+          a.twitter(href="https://twitter.com/bldrsco")
+            b-icon(icon='twitter-box')
+          a.facebook(href="https://www.facebook.com/bldrscollective")
+            b-icon(icon='facebook-box')
+          a.instagram(href="https://www.instagram.com/bldrsco")
+            b-icon(icon='instagram')
+        p.credit Site design by Stephen Bau, Builders Collective
 </template>
 
 <style lang="stylus">
@@ -72,9 +79,32 @@
     &:hover
       color: #00aeef
 .siteinfo
-  font-size: 0.9rem;
+  font-size: 0.9rem
   color: #666
   border-top: 1px solid #444
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 3rem
+  padding-top: 2rem
+  .social-media
+    margin-bottom: 1rem
+    a
+      margin-right: 1rem
+      color: #666
+      .icon
+        height: 30px
+        width: 30px
+        font-size: 30px
+        .mdi:before
+          font-size: 30px
+      &:hover
+        color: #00aeef
+
+@media screen and (min-width: 768px)
+  .siteinfo
+    .social-media
+      float: right
+      a
+        margin-left: 1rem
+        margin-right: 0
+    p.credit
+      margin-top: 0.3rem
 </style>
