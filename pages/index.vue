@@ -1,6 +1,11 @@
 <template>
   <div class="index">
-    <hero />
+    <hero
+      title="Design Influences"
+      subtitle="Inspired by the past. Shaping the future."
+      image="https://source.unsplash.com/nBWmOsOdi4Y/1600x900"
+      image_alt="Bauhaus Archive, Berlin"
+    />
     <div class="container">
       <section class="section">
         <div class="columns is-mobile">

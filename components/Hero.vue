@@ -1,14 +1,42 @@
-<template>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Design Influences
-        </h1>
-        <h2 class="subtitle">
-          Inspired by the past. Shaping the future.
-        </h2>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+  section.hero.is-fullheight.is-primary.has-background
+    img.hero-background.is-transparent(:src="image" :alt="image_alt")
+    .hero-body
+      .container
+        h1.title {{ title }}
+        h3.subtitle {{ subtitle }}
 </template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String
+    },
+    subtitle: {
+      type: String
+    },
+    image: {
+      type: String
+    },
+    image_alt: {
+      type: String
+    }
+  }
+}
+</script>
+
+<style lang="stylus">
+.hero
+  &.has-background
+    position: relative
+    overflow: hidden
+  &-background
+    position: absolute
+    object-fit: cover
+    object-position: center center
+    width: 100%
+    height: 100%
+    &.is-transparent
+      opacity: 0.3
+</style>
