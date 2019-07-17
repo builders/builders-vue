@@ -18,14 +18,14 @@ nav.navbar.header.is-fixed-top(role='navigation' aria-label='main navigation')
             a.navbar-item Research
             a.navbar-item Strategy
         .navbar-item.has-dropdown.is-hoverable
-          a.navbar-link Design
+          a.navbar-link(href='/design/') Design
           .navbar-dropdown
             a.navbar-item Ethics
             a.navbar-item Principles
             a.navbar-item Process
             a.navbar-item Systems
         .navbar-item.has-dropdown.is-hoverable
-          a.navbar-link Build
+          a.navbar-link(href='/build/') Build
           .navbar-dropdown
             a.navbar-item People
             a.navbar-item Relationships
