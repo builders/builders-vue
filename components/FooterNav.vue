@@ -55,7 +55,8 @@
             b-icon(icon='facebook-box')
           a.instagram(href="https://www.instagram.com/bldrsco")
             b-icon(icon='instagram')
-        p.credit Site design by Stephen Bau, Builders Collective
+        p.credit Site design by Stephen Bau,&nbsp;
+          a(href='https://builderscollective.com') Builders Collective
 </template>
 
 <style lang="stylus">
