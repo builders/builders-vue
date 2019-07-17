@@ -6,8 +6,8 @@ nav.navbar.header.is-fixed-top(role='navigation' aria-label='main navigation')
         strong Design Influences
       .navbar-burger(:class="{ 'is-active': showNav }" @click='showNav = !showNav')
         span(aria-hidden='true')
-          span(aria-hidden='true')
-            span(aria-hidden='true')
+        span(aria-hidden='true')
+        span(aria-hidden='true')
     #main-menu.navbar-menu(:class="{ 'is-active': showNav }")
       .navbar-start
         .navbar-item.has-dropdown.is-hoverable
