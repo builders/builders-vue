@@ -1,6 +1,6 @@
 <template lang="pug">
 .page.index
-  hero(title='Design Influences' subtitle='Inspired by the past. Shaping the future.' image='https://source.unsplash.com/nBWmOsOdi4Y/1600x900' image-alt='Bauhaus Archive, Berlin')
+  hero(title='Design Influences' subtitle='Inspired by the past. Shaping the future.' image='https://source.unsplash.com/R6cG5_u-Lkw/1600x900' image-alt='Bograshov St 1, Tel Aviv-Yafo, Israel')
     .container
       section.section
         .columns.is-mobile

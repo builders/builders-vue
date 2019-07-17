@@ -9,7 +9,6 @@ import Hero from '~/components/Hero'
 
 export default {
   name: 'Imagine',
-
   components: {
     Hero
   }
