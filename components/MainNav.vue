@@ -35,10 +35,10 @@
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Design</a>
             <div class="navbar-dropdown">
-              <a class="navbar-item">Identity</a>
-              <a class="navbar-item">Print</a>
-              <a class="navbar-item">Web</a>
-              <a class="navbar-item">Type</a>
+              <a class="navbar-item">Ethics</a>
+              <a class="navbar-item">Principles</a>
+              <a class="navbar-item">Process</a>
+              <a class="navbar-item">Systems</a>
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
@@ -47,6 +47,7 @@
               <a class="navbar-item">People</a>
               <a class="navbar-item">Relationships</a>
               <a class="navbar-item">Community</a>
+              <a class="navbar-item">Social Architecture</a>
             </div>
           </div>
         </div>
