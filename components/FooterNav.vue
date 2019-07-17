@@ -60,12 +60,15 @@
   margin-bottom: 1rem
   a
     color: #fff
+    display: block
     &:hover
       color: #00aeef
 .footer-link
-  margin-bottom: 0.5rem
   a
     color: #999
+    display: block
+    padding-top: 0.25em
+    padding-bottom: 0.25em
     &:hover
       color: #00aeef
 .siteinfo
