@@ -63,22 +63,21 @@
 .footer-nav
   background: #333
   color: #fff
+  a
+    color: #999
+    &:hover
+      color: #00aeef
 .footer-link-title
   font-size: 1.3rem
   margin-bottom: 1rem
   a
     color: #fff
     display: block
-    &:hover
-      color: #00aeef
 .footer-link
   a
-    color: #999
     display: block
     padding-top: 0.25em
     padding-bottom: 0.25em
-    &:hover
-      color: #00aeef
 .siteinfo
   font-size: 0.9rem
   color: #666
