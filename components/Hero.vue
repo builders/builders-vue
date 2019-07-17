@@ -1,6 +1,6 @@
 <template lang="pug">
   section.hero.is-fullheight.is-primary.has-background
-    img.hero-background.is-transparent(:src="image" :alt="image_alt")
+    img.hero-background.is-transparent(:src='image' :alt='imageAlt')
     .hero-body
       .container
         h1.title {{ title }}
@@ -11,16 +11,20 @@
 export default {
   props: {
     title: {
-      type: String
+      type: String,
+      default: 'Design Influences'
     },
     subtitle: {
-      type: String
+      type: String,
+      default: 'Inspired by the past. Shaping the future.'
     },
     image: {
-      type: String
+      type: String,
+      default: 'https://source.unsplash.com/nBWmOsOdi4Y/1600x900'
     },
-    image_alt: {
-      type: String
+    imageAlt: {
+      type: String,
+      default: 'Bauhaus Archive, Berlin'
     }
   }
 }
