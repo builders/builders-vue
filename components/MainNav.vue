@@ -182,4 +182,12 @@ export default {
     }
   }
 }
+
+.navbar-item.is-hoverable:focus .navbar-dropdown,
+.navbar-item.is-hoverable:focus-within .navbar-dropdown {
+  display: none;
+}
+.navbar-item.is-hoverable:hover .navbar-dropdown {
+  display: block;
+}
 </style>
