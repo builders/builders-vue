@@ -190,4 +190,17 @@ export default {
 .navbar-item.is-hoverable:hover .navbar-dropdown {
   display: block;
 }
+
+.menu-design .nuxt-link-active {
+  color: $secondary;
+}
+.menu-build .nuxt-link-active {
+  color: $tertiary;
+}
+a.navbar-link:focus-within,
+a.navbar-item:hover,
+a.navbar-item:focus,
+a.navbar-item.nuxt-link-active {
+  background-color: transparent;
+}
 </style>
