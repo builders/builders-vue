@@ -58,10 +58,18 @@
           </div>
         </div>
         <div class="navbar-end">
-          <a class="navbar-item">About</a>
-          <a class="navbar-item">Journal</a>
-          <a class="navbar-item">Work</a>
-          <a class="navbar-item">Resources</a>
+          <n-link class="navbar-item" to="/about">
+            About
+          </n-link>
+          <n-link class="navbar-item" to="/journal">
+            Journal
+          </n-link>
+          <n-link class="navbar-item" to="/work">
+            Work
+          </n-link>
+          <n-link class="navbar-item" to="/resources">
+            Resources
+          </n-link>
         </div>
       </div>
     </div>
