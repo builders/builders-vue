@@ -2,3 +2,13 @@
 
 @import 'variables.scss';
 @import '../../node_modules/bulma/bulma.sass';
+
+.is-secondary,
+.has-text-secondary {
+  color: $secondary;
+}
+
+.is-tertiary,
+.has-text-tertiary {
+  color: $tertiary;
+}
