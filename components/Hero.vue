@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.hero.is-fullheight.is-primary.has-background
+  section.hero.is-fullheight.has-background(:class='backgroundClass')
     img.hero-background.is-transparent(:src='image' :alt='imageAlt')
     .hero-body
       .container
@@ -25,6 +25,10 @@ export default {
     imageAlt: {
       type: String,
       default: 'Bauhaus Archive, Berlin'
+    },
+    backgroundClass: {
+      type: String,
+      default: 'is-primary'
     }
   }
 }
