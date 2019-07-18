@@ -6,7 +6,7 @@
           .footer-link-title.site-name
             a(href='/')
               | Design Influences
-        .column.is-3
+        .column.is-3.menu-imagine
           h3.footer-link-title
             a(href="/imagine/")
               | Imagine
@@ -19,7 +19,7 @@
               a Research
             .footer-link
               a Strategy
-        .column.is-3
+        .column.is-3.menu-design
           h3.footer-link-title
             a(href="/design/")
               | Design
@@ -32,7 +32,7 @@
               a Process
             .footer-link
               a Systems
-        .column.is-3
+        .column.is-3.menu-build
           h3.footer-link-title
             a(href="/build/")
               | Build
