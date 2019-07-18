@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: 'Hero',
   props: {
     title: {
       type: String,

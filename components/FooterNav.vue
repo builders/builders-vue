@@ -59,6 +59,12 @@
           a(href='https://builderscollective.com') builders collective
 </template>
 
+<script>
+export default {
+  name: 'FooterNav'
+}
+</script>
+
 <style lang="scss">
 @import '../assets/css/variables.scss';
 

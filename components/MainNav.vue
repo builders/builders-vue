@@ -40,6 +40,7 @@ nav.navbar.header.is-fixed-top(role='navigation' aria-label='main navigation')
 
 <script>
 export default {
+  name: 'MainNav',
   data() {
     return {
       showNav: false

@@ -8,7 +8,7 @@
 import Hero from '~/components/Hero'
 
 export default {
-  name: 'Design',
+  name: 'DesignPage',
   components: {
     Hero
   }
