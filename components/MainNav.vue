@@ -10,21 +10,21 @@ nav.navbar.header.is-fixed-top(role='navigation' aria-label='main navigation')
         span(aria-hidden='true')
     #main-menu.navbar-menu(:class="{ 'is-active': showNav }")
       .navbar-start
-        .navbar-item.has-dropdown.is-hoverable
+        .navbar-item.has-dropdown.is-hoverable.menu-imagine
           a.navbar-link(href='/imagine/') Imagine
           .navbar-dropdown
             a.navbar-item Resources
             a.navbar-item Theory
             a.navbar-item Research
             a.navbar-item Strategy
-        .navbar-item.has-dropdown.is-hoverable
+        .navbar-item.has-dropdown.is-hoverable.menu-design
           a.navbar-link(href='/design/') Design
           .navbar-dropdown
             a.navbar-item Ethics
             a.navbar-item Principles
             a.navbar-item Process
             a.navbar-item Systems
-        .navbar-item.has-dropdown.is-hoverable
+        .navbar-item.has-dropdown.is-hoverable.menu-build
           a.navbar-link(href='/build/') Build
           .navbar-dropdown
             a.navbar-item People
