@@ -34,17 +34,39 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-.hero
-  &.has-background
-    position: relative
-    overflow: hidden
-  &-background
-    position: absolute
-    object-fit: cover
-    object-position: center center
-    width: 100%
-    height: 100%
-    &.is-transparent
-      opacity: 0.3
+<style lang="scss">
+@import '../assets/css/variables.scss';
+
+.hero {
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+  &-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    &.is-transparent {
+      opacity: 0.3;
+    }
+  }
+  &.is-secondary {
+    background-color: $secondary;
+    color: #fff;
+    .title,
+    .subtitle {
+      color: #fff;
+    }
+  }
+  &.is-tertiary {
+    background-color: $tertiary;
+    color: #fff;
+    .title,
+    .subtitle {
+      color: #fff;
+    }
+  }
+}
 </style>
