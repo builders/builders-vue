@@ -5,7 +5,7 @@
       subtitle="Building resilience, relationships, and community."
       image="https://source.unsplash.com/JUHbj2ZV5hE/1600x900"
       image-alt="Bauhaus Building, Dessau"
-      background-class="is-tertiary"
+      color="tertiary"
     >
       <div class="container"></div>
     </hero-section>

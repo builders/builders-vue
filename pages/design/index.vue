@@ -5,7 +5,7 @@
       subtitle="Improving the experience of all living things on Earth."
       image="https://source.unsplash.com/nrhnluxL1E8/1600x900"
       image-alt="Bauhaus Archive, Berlin"
-      background-class="is-secondary"
+      color="secondary"
     >
       <div class="container"></div>
     </hero-section>

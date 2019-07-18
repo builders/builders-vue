@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-fullheight has-background" :class="backgroundClass">
+  <section class="hero is-fullheight has-background" :class="'is-' + color">
     <img class="hero-background is-transparent" :src="image" :alt="imageAlt" />
     <div class="hero-body">
       <div class="container">
@@ -30,9 +30,9 @@ export default {
       type: String,
       default: 'Bauhaus Archive, Berlin'
     },
-    backgroundClass: {
+    color: {
       type: String,
-      default: 'is-primary'
+      default: 'primary'
     }
   }
 }
