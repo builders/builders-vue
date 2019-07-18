@@ -9,13 +9,23 @@
     <section class="section">
       <div class="container">
         <div class="columns">
-          <icon-card title="Imagine" icon="triangle">
+          <icon-card
+            title="Imagine"
+            icon="triangle"
+            color="primary"
+            link="/imagine"
+          >
             Events
           </icon-card>
-          <icon-card title="Design" icon="circle">
+          <icon-card
+            title="Design"
+            icon="circle"
+            color="secondary"
+            link="/design"
+          >
             Workshops
           </icon-card>
-          <icon-card title="Build" icon="square">
+          <icon-card title="Build" icon="square" color="tertiary" link="/build">
             Projects
           </icon-card>
         </div>

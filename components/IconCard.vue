@@ -8,7 +8,9 @@
       </header>
       <div class="card-content">
         <div class="content has-text-centered">
-          <b-icon :icon="icon" size="is-large" type="is-primary"></b-icon>
+          <n-link :to="link">
+            <b-icon :icon="icon" size="is-large" :type="'is-' + color"></b-icon>
+          </n-link>
         </div>
       </div>
       <footer class="card-footer">
@@ -33,7 +35,26 @@ export default {
     icon: {
       type: String,
       required: true
+    },
+    color: {
+      type: String,
+      required: true,
+      default: 'primary'
+    },
+    link: {
+      type: String,
+      required: true
     }
   }
 }
 </script>
+
+<style>
+.icon.is-large {
+  height: 10rem;
+  width: 10rem;
+}
+.mdi-48px.mdi:before {
+  font-size: 10rem;
+}
+</style>
