@@ -1,6 +1,97 @@
 @charset "utf-8";
 
-$primary: #00aeef;
+$bld-cyan: #00aeef;
+$bld-yellow: #fdb813;
+$bld-magenta: #ec008c;
+$primary: $bld-cyan;
+$secondary: $bld-yellow;
+$tertiary: $bld-magenta;
 $link: $primary;
 
 @import "../../node_modules/bulma/bulma.sass";
+
+.menu-design {
+  .navbar-link {
+    &:hover {
+      color: $secondary;
+    }
+    &:not(.is-arrowless)::after {
+      border-color: $secondary;
+    }
+  }
+}
+
+.menu-build {
+  .navbar-link {
+    &:hover {
+      color: $tertiary;
+    }
+    &:not(.is-arrowless)::after {
+      border-color: $tertiary;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-imagine {
+    .navbar-dropdown {
+      a.navbar-item {
+        &:hover {
+          background-color: $primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .menu-design {
+    .navbar-dropdown {
+      a.navbar-item {
+        &:hover {
+          background-color: $secondary;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .menu-build {
+    .navbar-dropdown {
+      a.navbar-item {
+        &:hover {
+          background-color: $tertiary;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.hero.is-secondary {
+  background-color: $secondary;
+  color: #fff;
+  .title,
+  .subtitle {
+    color: #fff;
+  }
+}
+
+.hero.is-tertiary {
+  background-color: $tertiary;
+  color: #fff;
+  .title,
+  .subtitle {
+    color: #fff;
+  }
+}
+
+.footer-nav {
+  .menu-design {
+    a:hover {
+      color: $secondary;
+    }
+  }
+  .menu-build {
+    a:hover {
+      color: $tertiary;
+    }
+  }
+}
