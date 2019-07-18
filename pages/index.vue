@@ -8,7 +8,7 @@
     />
     <section class="section">
       <div class="container">
-        <div class="columns is-mobile">
+        <div class="columns">
           <icon-card title="Imagine" icon="triangle">
             Events
           </icon-card>
