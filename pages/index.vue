@@ -6,7 +6,7 @@
       image="https://source.unsplash.com/R6cG5_u-Lkw/1600x900"
       image-alt="Bograshov St 1, Tel Aviv-Yafo, Israel"
     />
-    <section class="section">
+    <section class="section is-medium">
       <div class="container">
         <div class="columns">
           <icon-card
