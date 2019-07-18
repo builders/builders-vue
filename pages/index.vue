@@ -1,15 +1,27 @@
-<template lang="pug">
-.page.index
-  hero-section(title='Design Influences' subtitle='Inspired by the past. Shaping the future.' image='https://source.unsplash.com/R6cG5_u-Lkw/1600x900' image-alt='Bograshov St 1, Tel Aviv-Yafo, Israel')
-  .container
-    section.section
-      .columns.is-mobile
-        icon-card(title='Imagine' icon='triangle')
-          | Events
-        icon-card(title='Design' icon='circle')
-          | Workshops
-        icon-card(title='Build' icon='square')
-          | Projects
+<template>
+  <div class="page index">
+    <hero-section
+      title="Design Influences"
+      subtitle="Inspired by the past. Shaping the future."
+      image="https://source.unsplash.com/R6cG5_u-Lkw/1600x900"
+      image-alt="Bograshov St 1, Tel Aviv-Yafo, Israel"
+    />
+    <div class="container">
+      <section class="section">
+        <div class="columns is-mobile">
+          <icon-card title="Imagine" icon="triangle">
+            Events
+          </icon-card>
+          <icon-card title="Design" icon="circle">
+            Workshops
+          </icon-card>
+          <icon-card title="Build" icon="square">
+            Projects
+          </icon-card>
+        </div>
+      </section>
+    </div>
+  </div>
 </template>
 
 <script>

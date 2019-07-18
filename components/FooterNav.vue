@@ -1,62 +1,126 @@
-<template lang="pug">
-  footer.footer.footer-nav
-    .container
-      .columns
-        .column.is-3
-          .footer-link-title.site-name
-            n-link(to='/')
-              | Design Influences
-        .column.is-3.menu-imagine
-          h3.footer-link-title
-            n-link(to="/imagine")
-              | Imagine
-          .footer-links
-            .footer-link
-              a Resources
-            .footer-link
-              a Theory
-            .footer-link
-              a Research
-            .footer-link
-              a Strategy
-        .column.is-3.menu-design
-          h3.footer-link-title
-            n-link(to="/design")
-              | Design
-          .footer-links
-            .footer-link
-              a Ethics
-            .footer-link
-              a Principles
-            .footer-link
-              a Process
-            .footer-link
-              a Systems
-        .column.is-3.menu-build
-          h3.footer-link-title
-            n-link(to="/build")
-              | Build
-          .footer-links
-            .footer-link
-              a People
-            .footer-link
-              a Relationships
-            .footer-link
-              a Community
-            .footer-link
-              a Social Architecture
-      .siteinfo
-        .social-media
-          a.medium(href="https://medium.com/builderscollective")
-            b-icon(icon='medium')
-          a.twitter(href="https://twitter.com/bldrsco")
-            b-icon(icon='twitter-box')
-          a.facebook(href="https://www.facebook.com/bldrscollective")
-            b-icon(icon='facebook-box')
-          a.instagram(href="https://www.instagram.com/bldrsco")
-            b-icon(icon='instagram')
-        p.credit A project of the&nbsp;
-          a(href='https://builderscollective.com') builders collective
+<template>
+  <footer class="footer footer-nav">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <div class="footer-link-title site-name">
+            <n-link to="/">
+              Design Influences
+            </n-link>
+          </div>
+        </div>
+        <div class="column is-3 menu-imagine">
+          <h3 class="footer-link-title">
+            <n-link to="/imagine">
+              Imagine
+            </n-link>
+          </h3>
+          <div class="footer-links">
+            <div class="footer-link">
+              <a>
+                Resources
+              </a>
+            </div>
+            <div class="footer-link">
+              <a>
+                Theory
+              </a>
+            </div>
+            <div class="footer-link">
+              <a>
+                Research
+              </a>
+            </div>
+            <div class="footer-link">
+              <a>
+                Strategy
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3 menu-design">
+          <h3 class="footer-link-title">
+            <n-link to="/design">
+              Design
+            </n-link>
+          </h3>
+          <div class="footer-links">
+            <div class="footer-link">
+              <a>
+                Ethics
+              </a>
+            </div>
+            <div class="footer-link">
+              <a>
+                Principles
+              </a>
+            </div>
+            <div class="footer-link">
+              <a>
+                Process
+              </a>
+            </div>
+            <div class="footer-link">
+              <a>
+                Systems
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3 menu-build">
+          <h3 class="footer-link-title">
+            <n-link to="/build">
+              Build
+            </n-link>
+          </h3>
+          <div class="footer-links">
+            <div class="footer-link">
+              <a>
+                People
+              </a>
+            </div>
+            <div class="footer-link">
+              <a>
+                Relationships
+              </a>
+            </div>
+            <div class="footer-link">
+              <a>
+                Community
+              </a>
+            </div>
+            <div class="footer-link">
+              <a>
+                Social Architecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="siteinfo">
+        <div class="social-media">
+          <a class="medium" href="https://medium.com/builderscollective">
+            <b-icon icon="medium" />
+          </a>
+          <a class="twitter" href="https://twitter.com/bldrsco">
+            <b-icon icon="twitter-box" />
+          </a>
+          <a class="facebook" href="https://www.facebook.com/bldrscollective">
+            <b-icon icon="facebook-box" />
+          </a>
+          <a class="instagram" href="https://www.instagram.com/bldrsco">
+            <b-icon icon="instagram" />
+          </a>
+        </div>
+        <p class="credit">
+          A project of the&nbsp;
+          <a href="https://builderscollective.com">
+            builders collective
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>

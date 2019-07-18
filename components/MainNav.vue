@@ -1,41 +1,71 @@
-<template lang="pug">
-nav.navbar.header.is-fixed-top(role='navigation' aria-label='main navigation')
-  .container
-    .navbar-brand
-      n-link.navbar-item(to='/')
-        strong Design Influences
-      .navbar-burger(:class="{ 'is-active': showNav }" @click='showNav = !showNav')
-        span(aria-hidden='true')
-        span(aria-hidden='true')
-        span(aria-hidden='true')
-    #main-menu.navbar-menu(:class="{ 'is-active': showNav }")
-      .navbar-start
-        .navbar-item.has-dropdown.is-hoverable.menu-imagine
-          n-link.navbar-link(to='/imagine') Imagine
-          .navbar-dropdown
-            a.navbar-item Resources
-            a.navbar-item Theory
-            a.navbar-item Research
-            a.navbar-item Strategy
-        .navbar-item.has-dropdown.is-hoverable.menu-design
-          n-link.navbar-link(to='/design') Design
-          .navbar-dropdown
-            a.navbar-item Ethics
-            a.navbar-item Principles
-            a.navbar-item Process
-            a.navbar-item Systems
-        .navbar-item.has-dropdown.is-hoverable.menu-build
-          n-link.navbar-link(to='/build') Build
-          .navbar-dropdown
-            a.navbar-item People
-            a.navbar-item Relationships
-            a.navbar-item Community
-            a.navbar-item Social Architecture
-      .navbar-end
-        a.navbar-item About
-        a.navbar-item Journal
-        a.navbar-item Work
-        a.navbar-item Resources
+<template>
+  <nav
+    class="navbar header is-fixed-top"
+    role="navigation"
+    aria-label="main navigation"
+  >
+    <div class="container">
+      <div class="navbar-brand">
+        <n-link class="navbar-item" to="/">
+          <strong>
+            Design Influences
+          </strong>
+        </n-link>
+        <div
+          class="navbar-burger"
+          :class="{ 'is-active': showNav }"
+          @click="showNav = !showNav"
+        >
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </div>
+      </div>
+      <div class="navbar-menu" id="main-menu" :class="{ 'is-active': showNav }">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable menu-imagine">
+            <n-link class="navbar-link" to="/imagine">
+              Imagine
+            </n-link>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">Resources</a>
+              <a class="navbar-item">Theory</a>
+              <a class="navbar-item">Research</a>
+              <a class="navbar-item">Strategy</a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable menu-design">
+            <n-link class="navbar-link" to="/design">
+              Design
+            </n-link>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">Ethics</a>
+              <a class="navbar-item">Principles</a>
+              <a class="navbar-item">Process</a>
+              <a class="navbar-item">Systems</a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable menu-build">
+            <n-link class="navbar-link" to="/build">
+              Build
+            </n-link>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">People</a>
+              <a class="navbar-item">Relationships</a>
+              <a class="navbar-item">Community</a>
+              <a class="navbar-item">Social Architecture</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item">About</a>
+          <a class="navbar-item">Journal</a>
+          <a class="navbar-item">Work</a>
+          <a class="navbar-item">Resources</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>

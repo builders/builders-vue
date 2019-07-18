@@ -1,10 +1,13 @@
-<template lang="pug">
-  section.hero.is-fullheight.has-background(:class='backgroundClass')
-    img.hero-background.is-transparent(:src='image' :alt='imageAlt')
-    .hero-body
-      .container
-        h1.title {{ title }}
-        h3.subtitle {{ subtitle }}
+<template>
+  <section class="hero is-fullheight has-background" :class="backgroundClass">
+    <img class="hero-background is-transparent" :src="image" :alt="imageAlt" />
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">{{ title }}</h1>
+        <h3 class="subtitle">{{ subtitle }}</h3>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

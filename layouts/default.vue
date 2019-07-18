@@ -1,8 +1,9 @@
-<template lang="pug">
-  #app
-    main-nav
-    nuxt
-    footer-nav
+<template>
+  <div id="app">
+    <main-nav />
+    <nuxt />
+    <footer-nav />
+  </div>
 </template>
 
 <script>
