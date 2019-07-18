@@ -47,3 +47,100 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+@import '../assets/css/variables.scss';
+
+.menu-imagine {
+  &.navbar-item.has-dropdown:hover {
+    .navbar-link {
+      background-color: $primary;
+      color: #fff;
+      &:not(.is-arrowless)::after {
+        border-color: #fff;
+      }
+    }
+  }
+  .navbar-link {
+    &:hover {
+      color: #fff;
+    }
+    &:not(.is-arrowless)::after {
+      border-color: $primary;
+    }
+  }
+}
+
+.menu-design {
+  &.navbar-item.has-dropdown:hover {
+    .navbar-link {
+      background-color: $secondary;
+      color: #fff;
+      &:not(.is-arrowless)::after {
+        border-color: #fff;
+      }
+    }
+  }
+  .navbar-link {
+    &:hover {
+      color: #fff;
+    }
+    &:not(.is-arrowless)::after {
+      border-color: $secondary;
+    }
+  }
+}
+
+.menu-build {
+  &.navbar-item.has-dropdown:hover {
+    .navbar-link {
+      background-color: $tertiary;
+      color: #fff;
+      &:not(.is-arrowless)::after {
+        border-color: #fff;
+      }
+    }
+  }
+  .navbar-link {
+    &:hover {
+      color: #fff;
+    }
+    &:not(.is-arrowless)::after {
+      border-color: $tertiary;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-imagine {
+    .navbar-dropdown {
+      a.navbar-item {
+        &:hover {
+          background-color: $primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .menu-design {
+    .navbar-dropdown {
+      a.navbar-item {
+        &:hover {
+          background-color: $secondary;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .menu-build {
+    .navbar-dropdown {
+      a.navbar-item {
+        &:hover {
+          background-color: $tertiary;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+</style>
