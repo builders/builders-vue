@@ -4,11 +4,11 @@
       .columns
         .column.is-3
           .footer-link-title.site-name
-            a(href='/')
+            n-link(to='/')
               | Design Influences
         .column.is-3.menu-imagine
           h3.footer-link-title
-            a(href="/imagine/")
+            n-link(to="/imagine")
               | Imagine
           .footer-links
             .footer-link
@@ -21,7 +21,7 @@
               a Strategy
         .column.is-3.menu-design
           h3.footer-link-title
-            a(href="/design/")
+            n-link(to="/design")
               | Design
           .footer-links
             .footer-link
@@ -34,7 +34,7 @@
               a Systems
         .column.is-3.menu-build
           h3.footer-link-title
-            a(href="/build/")
+            n-link(to="/build")
               | Build
           .footer-links
             .footer-link
