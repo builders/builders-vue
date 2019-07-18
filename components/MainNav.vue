@@ -2,7 +2,7 @@
 nav.navbar.header.is-fixed-top(role='navigation' aria-label='main navigation')
   .container
     .navbar-brand
-      a.navbar-item(href='/')
+      n-link.navbar-item(to='/')
         strong Design Influences
       .navbar-burger(:class="{ 'is-active': showNav }" @click='showNav = !showNav')
         span(aria-hidden='true')
@@ -11,21 +11,21 @@ nav.navbar.header.is-fixed-top(role='navigation' aria-label='main navigation')
     #main-menu.navbar-menu(:class="{ 'is-active': showNav }")
       .navbar-start
         .navbar-item.has-dropdown.is-hoverable.menu-imagine
-          a.navbar-link(href='/imagine/') Imagine
+          n-link.navbar-link(to='/imagine') Imagine
           .navbar-dropdown
             a.navbar-item Resources
             a.navbar-item Theory
             a.navbar-item Research
             a.navbar-item Strategy
         .navbar-item.has-dropdown.is-hoverable.menu-design
-          a.navbar-link(href='/design/') Design
+          n-link.navbar-link(to='/design') Design
           .navbar-dropdown
             a.navbar-item Ethics
             a.navbar-item Principles
             a.navbar-item Process
             a.navbar-item Systems
         .navbar-item.has-dropdown.is-hoverable.menu-build
-          a.navbar-link(href='/build/') Build
+          n-link.navbar-link(to='/build') Build
           .navbar-dropdown
             a.navbar-item People
             a.navbar-item Relationships
