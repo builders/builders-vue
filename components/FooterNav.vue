@@ -59,52 +59,85 @@
           a(href='https://builderscollective.com') Builders Collective
 </template>
 
-<style lang="stylus">
-.footer-nav
-  background: #333
-  color: #fff
-  a
-    color: #999
-    &:hover
-      color: #00aeef
-.footer-link-title
-  font-size: 1.3rem
-  margin-bottom: 1rem
-  a
-    color: #fff
-    display: block
-.footer-link
-  a
-    display: block
-    padding-top: 0.25em
-    padding-bottom: 0.25em
-.siteinfo
-  font-size: 0.9rem
-  color: #666
-  border-top: 1px solid #444
-  margin-top: 3rem
-  padding-top: 2rem
-  .social-media
-    margin-bottom: 1rem
-    a
-      margin-right: 1rem
-      color: #666
-      .icon
-        height: 30px
-        width: 30px
-        font-size: 30px
-        .mdi:before
-          font-size: 30px
-      &:hover
-        color: #00aeef
+<style lang="scss">
+@import '../assets/css/variables.scss';
 
-@media screen and (min-width: 768px)
-  .siteinfo
-    .social-media
-      float: right
-      a
-        margin-left: 1rem
-        margin-right: 0
-    p.credit
-      margin-top: 0.3rem
+.footer-nav {
+  background: #333;
+  color: #fff;
+  a {
+    color: #999;
+    &:hover {
+      color: #00aeef;
+    }
+  }
+  .menu-design {
+    a:hover {
+      color: $secondary;
+    }
+  }
+  .menu-build {
+    a:hover {
+      color: $tertiary;
+    }
+  }
+}
+
+.footer-link-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  a {
+    color: #fff;
+    display: block;
+  }
+}
+
+.footer-link {
+  a {
+    display: block;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+  }
+}
+
+.siteinfo {
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #444;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  .social-media {
+    margin-bottom: 1rem;
+    a {
+      margin-right: 1rem;
+      color: #666;
+      .icon {
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        .mdi:before {
+          font-size: 30px;
+        }
+      }
+      &:hover {
+        color: #00aeef;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .siteinfo {
+    .social-media {
+      float: right;
+      a {
+        margin-left: 1rem;
+        margin-right: 0;
+      }
+    }
+    p.credit {
+      margin-top: 0.3rem;
+    }
+  }
+}
 </style>
