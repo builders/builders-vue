@@ -6,8 +6,8 @@
       image="https://source.unsplash.com/R6cG5_u-Lkw/1600x900"
       image-alt="Bograshov St 1, Tel Aviv-Yafo, Israel"
     />
-    <div class="container">
-      <section class="section">
+    <section class="section">
+      <div class="container">
         <div class="columns is-mobile">
           <icon-card title="Imagine" icon="triangle">
             Events
@@ -19,8 +19,8 @@
             Projects
           </icon-card>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </div>
 </template>
 
