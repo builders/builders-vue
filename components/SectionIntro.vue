@@ -13,8 +13,8 @@
           </div>
         </div>
         <div class="column is-6 is-offset-2">
-          <div class="content">
-            <p class="paragraph">
+          <div class="content body">
+            <p>
               {{ body }}
             </p>
           </div>
@@ -56,9 +56,12 @@ export default {
       line-height: 1.5em;
       margin-top: 4em;
     }
-    .paragraph {
-      font-size: 1.5rem;
+    .body {
+      font-size: 1.4rem;
       line-height: 2em;
+      p {
+        margin-bottom: 2em;
+      }
     }
   }
 }
