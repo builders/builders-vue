@@ -21,7 +21,7 @@
           <span aria-hidden="true" />
         </div>
       </div>
-      <div class="navbar-menu" id="main-menu" :class="{ 'is-active': showNav }">
+      <div id="main-menu" class="navbar-menu" :class="{ 'is-active': showNav }">
         <div class="navbar-start">
           <div class="navbar-item has-dropdown is-hoverable menu-imagine">
             <n-link class="navbar-link" to="/imagine">

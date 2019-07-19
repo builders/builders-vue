@@ -3,8 +3,12 @@
     <img class="hero-background is-transparent" :src="image" :alt="imageAlt" />
     <div class="hero-body">
       <div class="container">
-        <h1 class="title is-size-2 has-text-weight-bold">{{ title }}</h1>
-        <h3 class="subtitle">{{ subtitle }}</h3>
+        <h1 class="title is-size-2 has-text-weight-bold">
+          {{ title }}
+        </h1>
+        <h3 class="subtitle">
+          {{ subtitle }}
+        </h3>
       </div>
     </div>
   </section>

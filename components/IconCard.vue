@@ -9,7 +9,7 @@
       <div class="card-content">
         <div class="content has-text-centered">
           <n-link :to="link">
-            <b-icon :icon="icon" size="is-large" :type="'is-' + color"></b-icon>
+            <b-icon :icon="icon" size="is-large" :type="'is-' + color" />
           </n-link>
         </div>
       </div>
