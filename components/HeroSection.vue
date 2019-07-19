@@ -72,5 +72,8 @@ export default {
       color: #fff;
     }
   }
+  img {
+    filter: grayscale(1);
+  }
 }
 </style>
