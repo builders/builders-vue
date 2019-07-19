@@ -7,19 +7,28 @@
       image-alt="Bograshov St 1, Tel Aviv-Yafo, Israel"
     />
     <section-intro
-      title="Future Literacy"
-      subtitle="An orientation to the opportunities afforded by the adjacent possible."
+      title="A New Synthesis"
+      subtitle="The past century has been marked by division. We need a new synthesis."
     >
       <p class="intro-paragraph">
-        If we are oriented to the past, we may tend to make the same mistakes.
-        If we are oriented to the present, we may become resigned to accept the
-        way things are. If we are oriented to the future, the possibilities may
-        create an indefinite sense of uncertainty, and possibly anxiety, in the
-        face of constant change.
+        In the service of industrial models of social and political engineering,
+        art and technology have been co-opted to participate in a
+        military-industrial complex that is a synthesis of our worst human
+        characteristics: greed and hatred.
       </p>
       <p class="intro-paragraph">
-        If we embrace all of reality, we may find the ability to balance memory,
-        perception, and expectation to orient ourselves to growth.
+        We are caught in a dialectic of opposing forces, in the politics of
+        thesis and antithesis, right versus left. We need a new synthesis that
+        transcends the old paradigms. Unity in diversity is the model for both
+        the organism and the planet.
+      </p>
+      <p class="intro-paragraph">
+        <strong>The new synthesis is integrating biology and physics.</strong>
+        The future of design and architecture may be in the integration of the
+        separate disciplines to learn how interconnected systems work and model
+        the built environment to imitate the processes of living organisms. We
+        are beginning to see these changes happening through the self-organizing
+        principles of biological adaptation.
       </p>
     </section-intro>
     <section class="section is-medium">
