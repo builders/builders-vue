@@ -73,7 +73,7 @@ export default {
     }
   }
   img {
-    filter: grayscale(1);
+    filter: grayscale(1) opacity(0.7);
   }
 }
 </style>
