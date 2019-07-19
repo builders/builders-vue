@@ -1,5 +1,5 @@
 <template>
-  <section class="section is-medium intro">
+  <section class="section section-intro is-medium">
     <div class="container">
       <div class="columns is-8">
         <div class="column is-4">
@@ -42,15 +42,15 @@ export default {
 
 <style lang="scss">
 @media screen and (min-width: 1024px) {
-  .intro {
+  .section-intro {
     .subtitle {
       line-height: 1.5em;
       margin-top: 4em;
     }
     .body {
-      font-size: 1.4rem;
-      line-height: 2em;
-      p {
+      p.intro-paragraph {
+        font-size: 1.4rem;
+        line-height: 2em;
         margin-bottom: 2em;
       }
     }
