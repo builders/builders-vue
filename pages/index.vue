@@ -9,7 +9,7 @@
     <section-intro />
     <section class="section is-medium">
       <div class="container">
-        <div class="columns">
+        <div class="columns is-variable is-6">
           <icon-card
             title="Imagine"
             icon="triangle"
