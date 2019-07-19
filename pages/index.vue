@@ -6,6 +6,7 @@
       image="https://source.unsplash.com/R6cG5_u-Lkw/1600x900"
       image-alt="Bograshov St 1, Tel Aviv-Yafo, Israel"
     />
+    <section-intro />
     <section class="section is-medium">
       <div class="container">
         <div class="columns">
@@ -37,13 +38,15 @@
 <script>
 import IconCard from '~/components/IconCard'
 import HeroSection from '~/components/HeroSection'
+import SectionIntro from '~/components/SectionIntro'
 
 export default {
   name: 'HomePage',
 
   components: {
     IconCard,
-    HeroSection
+    HeroSection,
+    SectionIntro
   }
 }
 </script>
