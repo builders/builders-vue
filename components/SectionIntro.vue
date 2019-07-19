@@ -4,19 +4,17 @@
       <div class="columns is-8">
         <div class="column is-4">
           <div class="content">
-            <h1 class="title has-text-weight-bold is-spaced">
+            <h2 class="title is-size-3 has-text-weight-bold is-spaced">
               {{ title }}
-            </h1>
-            <h2 class="subtitle is-size-5 has-text-grey">
-              {{ subtitle }}
             </h2>
+            <h3 class="subtitle is-size-5 has-text-grey">
+              {{ subtitle }}
+            </h3>
           </div>
         </div>
         <div class="column is-6 is-offset-2">
           <div class="content body">
-            <p>
-              {{ body }}
-            </p>
+            <slot />
           </div>
         </div>
       </div>
@@ -31,19 +29,12 @@ export default {
     title: {
       type: String,
       required: true,
-      default: 'Future Literacy'
+      default: 'Title'
     },
     subtitle: {
       type: String,
       required: true,
-      default:
-        'An orientation to the opportunities afforded by the adjacent possible.'
-    },
-    body: {
-      type: String,
-      required: true,
-      default:
-        'If we are oriented to the past, we may tend to make the same mistakes. If we are oriented to the present, we may become resigned to accept the way things are. If we are oriented to the future, the possibilities may create an indefinite sense of uncertainty, and possibly anxiety, in the face of constant change. If we embrace all of reality, we may find the ability to balance memory, perception, and expectation to orient ourselves to growth.'
+      default: 'Subtitle'
     }
   }
 }
