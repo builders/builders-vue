@@ -6,9 +6,7 @@
       image="https://source.unsplash.com/2JIvboGLeho/1600x900"
       image-alt="Stadsbiblioteket, Stockholm, Sweden"
       color="primary"
-    >
-      <div class="container"></div>
-    </hero-section>
+    />
   </div>
 </template>
 

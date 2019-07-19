@@ -6,9 +6,7 @@
       image="https://source.unsplash.com/nBWmOsOdi4Y/1600x900"
       image-alt="Bauhaus Archive, Berlin"
       color="primary"
-    >
-      <div class="container"></div>
-    </hero-section>
+    />
   </div>
 </template>
 

@@ -6,9 +6,7 @@
       image="https://source.unsplash.com/CxYHfBkC0vs/1600x900"
       image-alt="Filling a blank page"
       color="primary"
-    >
-      <div class="container"></div>
-    </hero-section>
+    />
   </div>
 </template>
 

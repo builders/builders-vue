@@ -6,9 +6,7 @@
       image="https://source.unsplash.com/8KfCR12oeUM/1600x900"
       image-alt="In the line of fire"
       color="primary"
-    >
-      <div class="container"></div>
-    </hero-section>
+    />
   </div>
 </template>
 
