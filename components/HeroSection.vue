@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-fullheight has-background" :class="'is-' + color">
+  <section class="hero has-background" :class="['is-' + color, size]">
     <img class="hero-background is-transparent" :src="image" :alt="imageAlt" />
     <div class="hero-body">
       <div class="container">
@@ -37,6 +37,10 @@ export default {
     color: {
       type: String,
       default: 'primary'
+    },
+    size: {
+      type: String,
+      default: 'is-fullheight'
     }
   }
 }
