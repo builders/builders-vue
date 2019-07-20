@@ -12,3 +12,16 @@
 .has-text-tertiary {
   color: $tertiary;
 }
+
+.page-leave-active {
+  transition: all .8s cubic-bezier(.55,0,.1,1);
+}
+
+.page-enter-active {
+  transition: all .4s cubic-bezier(.55,0,.1,1);
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
