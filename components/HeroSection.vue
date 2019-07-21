@@ -1,6 +1,11 @@
 <template>
   <section class="hero has-background" :class="['is-' + color, size]">
-    <img class="hero-background is-transparent" :src="image" :alt="imageAlt" />
+    <img
+      v-if="image"
+      class="hero-background is-transparent"
+      :src="image"
+      :alt="imageAlt"
+    />
     <div class="hero-body">
       <div class="container">
         <h1 class="title is-size-2 has-text-weight-bold">
@@ -28,11 +33,11 @@ export default {
     },
     image: {
       type: String,
-      default: 'https://source.unsplash.com/nBWmOsOdi4Y/1600x900'
+      default: null
     },
     imageAlt: {
       type: String,
-      default: 'Bauhaus Archive, Berlin'
+      default: null
     },
     color: {
       type: String,
