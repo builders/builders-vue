@@ -30,6 +30,11 @@ export default {
     HeroSection,
     SectionIntro
   },
-  props: ['error']
+  props: {
+    error: {
+      type: Object,
+      default: () => {}
+    }
+  }
 }
 </script>
