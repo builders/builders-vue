@@ -21,18 +21,31 @@
         marginalized by the unspoken sanctions of our social status.
       </p>
     </section-intro>
+    <section-journal
+      title="Journal"
+      subtitle="Progress and the evolution of ideas."
+      :articles="articles"
+    />
   </div>
 </template>
 
 <script>
 import HeroSection from '~/components/HeroSection'
 import SectionIntro from '~/components/SectionIntro'
+import SectionJournal from '~/components/SectionJournal'
+
+import articles from '~/contents/journal/articles.js'
 
 export default {
   name: 'JournalPage',
   components: {
     HeroSection,
-    SectionIntro
+    SectionIntro,
+    SectionJournal
+  },
+  async asyncData ({ route }) {
+    const promises = articles.map(article => import(`~/contents/journal/${article}.md`))
+    return { articles: await Promise.all(promises) }
   }
 }
 </script>
