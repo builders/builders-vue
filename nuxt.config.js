@@ -1,3 +1,6 @@
+var path = require('path');
+import articles from "./contents/journal/articles.js"
+
 export default {
   mode: 'universal',
   /*
@@ -57,5 +60,12 @@ export default {
         include: path.resolve(__dirname, 'contents'),
       })
     }
+  },
+  /*
+   ** Generate dynamic routes
+   */
+  generate: {
+    fallback: true,
+    routes: [].concat(articles.map(article => `journal/${article}`))
   }
 }
