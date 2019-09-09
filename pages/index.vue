@@ -36,7 +36,7 @@
         <div class="columns is-variable is-6">
           <icon-card
             title="Imagine"
-            icon="triangle"
+            icon="circle"
             color="primary"
             link="/imagine"
           >
@@ -44,13 +44,17 @@
           </icon-card>
           <icon-card
             title="Design"
-            icon="circle"
+            icon="triangle"
             color="secondary"
             link="/design"
           >
             Workshops
           </icon-card>
-          <icon-card title="Build" icon="square" color="tertiary" link="/build">
+          <icon-card
+            title="Build"
+            icon="square"
+            color="tertiary"
+            link="/build">
             Projects
           </icon-card>
         </div>
