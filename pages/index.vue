@@ -31,6 +31,11 @@
         principles of biological adaptation.
       </p>
     </section-intro>
+    <section-journal
+      title="Journal"
+      subtitle="Progress and the evolution of ideas."
+      :articles="articles"
+    />
     <section class="section is-medium">
       <div class="container">
         <div class="columns is-variable is-6">
@@ -67,6 +72,9 @@
 import IconCard from '~/components/IconCard'
 import HeroSection from '~/components/HeroSection'
 import SectionIntro from '~/components/SectionIntro'
+import SectionJournal from '~/components/SectionJournal'
+
+import articles from '~/contents/journal/articles.js'
 
 export default {
   name: 'HomePage',
@@ -74,7 +82,12 @@ export default {
   components: {
     IconCard,
     HeroSection,
-    SectionIntro
+    SectionIntro,
+    SectionJournal
+  },
+  async asyncData ({ route }) {
+    const promises = articles.map(article => import(`~/contents/journal/${article}.md`))
+    return { articles: await Promise.all(promises) }
   }
 }
 </script>
