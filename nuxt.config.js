@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require('path');
 import articles from "./contents/journal/articles.js"
 
 export default {
