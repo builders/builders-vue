@@ -1,14 +1,11 @@
 ---
 title: "A New Synthesis"
-link: "journal/a-new-synthesis"
-cover: ""
+subtitle: "The past century has been marked by division. We need a new synthesis."
 description: "The past century has been marked by division. We need a new synthesis."
 date: "August 1, 2019"
+cover: ""
+link: "journal/a-new-synthesis"
 ---
-# A New Synthesis
-
-## The past century has been marked by division. We need a new synthesis.
-
 In the service of industrial models of social and political engineering, art and
 technology have been co-opted to participate in a military-industrial complex
 that is a synthesis of our worst human characteristics: greed and hatred.
