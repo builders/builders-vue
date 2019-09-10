@@ -22,8 +22,8 @@
       </p>
     </section-intro>
     <section-journal
-      title="Journal"
-      subtitle="Progress and the evolution of ideas."
+      title="Articles"
+      subtitle="Some thoughts on the influence of design: Inspired by the past. Shaping the future."
       :articles="articles"
     />
   </div>
