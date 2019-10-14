@@ -100,16 +100,16 @@
       <div class="siteinfo">
         <div class="social-media">
           <a class="medium" href="https://medium.com/builderscollective">
-            <b-icon icon="medium" />
+            <img class="icon" src="/images/medium.svg" alt="Medium" />
           </a>
           <a class="twitter" href="https://twitter.com/bldrsco">
-            <b-icon icon="twitter-box" />
+            <img class="icon" src="/images/twitter-square.svg" alt="Twitter" />
           </a>
           <a class="facebook" href="https://www.facebook.com/bldrscollective">
-            <b-icon icon="facebook-box" />
+            <img class="icon" src="/images/facebook-square.svg" alt="Facebook" />
           </a>
           <a class="instagram" href="https://www.instagram.com/bldrsco">
-            <b-icon icon="instagram" />
+            <img class="icon" src="/images/instagram.svg" alt="Instagram" />
           </a>
         </div>
         <p class="credit">
