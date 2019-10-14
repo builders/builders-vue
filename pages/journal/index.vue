@@ -3,7 +3,7 @@
     <hero-section
       title="Journal"
       subtitle="Progress and the evolution of ideas."
-      image="https://source.unsplash.com/CxYHfBkC0vs/1600x900"
+      image="/images/fill-a-blank-page-CxYHfBkC0vs.jpg"
       image-alt="Filling a blank page"
       color="secondary"
       size="is-large"

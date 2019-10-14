@@ -3,7 +3,7 @@
     <hero-section
       title="Design"
       subtitle="Improving the experience of all living things on Earth."
-      image="https://source.unsplash.com/nrhnluxL1E8/1600x900"
+      image="/images/bauhaus-archiv-berlin-nrhnluxL1E8.jpg"
       image-alt="Bauhaus Archive, Berlin"
       color="secondary"
     />

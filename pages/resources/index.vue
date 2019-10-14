@@ -3,7 +3,7 @@
     <hero-section
       title="Resources"
       subtitle="Making sense through empathy, curiosity, and research."
-      image="https://source.unsplash.com/2JIvboGLeho/1600x900"
+      image="/images/stadsbiblioteket-stockholm-2JIvboGLeho.jpg"
       image-alt="Stadsbiblioteket, Stockholm, Sweden"
       color="primary"
       size="is-large"

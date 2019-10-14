@@ -3,7 +3,7 @@
     <hero-section
       title="Design Influences"
       subtitle="Inspired by the past. Shaping the future."
-      image="https://source.unsplash.com/R6cG5_u-Lkw/1600x900"
+      image="/images/tel-aviv-yafo-israel-R6cG5_u-Lkw.jpg"
       image-alt="Bograshov St 1, Tel Aviv-Yafo, Israel"
     />
     <section-intro

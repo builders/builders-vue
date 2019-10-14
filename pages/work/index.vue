@@ -3,7 +3,7 @@
     <hero-section
       title="Work"
       subtitle="Finding flow in the search for agency, purpose, and mastery."
-      image="https://source.unsplash.com/8KfCR12oeUM/1600x900"
+      image="/images/in-the-line-of-fire-8KfCR12oeUM.jpg"
       image-alt="In the line of fire"
       color="tertiary"
       size="is-large"

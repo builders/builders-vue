@@ -3,7 +3,7 @@
     <hero-section
       title="About"
       subtitle="Putting ideas into practice."
-      image="https://source.unsplash.com//ineC_oi7NHs/1600x900"
+      image="/images/perspective-playground-ineC_oi7NHs.jpg"
       image-alt="Perspective Playground"
       color="primary"
       size="is-large"

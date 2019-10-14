@@ -3,7 +3,7 @@
     <hero-section
       title="Imagine"
       subtitle="Creativity and innovation at the intersection of art and science."
-      image="https://source.unsplash.com/nBWmOsOdi4Y/1600x900"
+      image="/images/bauhaus-archiv-berlin-nBWmOsOdi4Y.jpg"
       image-alt="Bauhaus Archive, Berlin"
       color="primary"
     />
