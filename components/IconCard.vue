@@ -9,7 +9,7 @@
       <div class="card-content">
         <div class="content has-text-centered">
           <n-link :to="link">
-            <b-icon :icon="icon" size="is-large" :type="'is-' + color" />
+            <img :src="image" :alt="title" />
           </n-link>
         </div>
       </div>
@@ -33,6 +33,10 @@ export default {
       required: true
     },
     icon: {
+      type: String,
+      required: true
+    },
+    image: {
       type: String,
       required: true
     },

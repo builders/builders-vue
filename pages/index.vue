@@ -42,6 +42,7 @@
           <icon-card
             title="Imagine"
             icon="circle"
+            image="/images/circle.svg"
             color="primary"
             link="/imagine"
           >
@@ -50,6 +51,7 @@
           <icon-card
             title="Design"
             icon="triangle"
+            image="/images/triangle.svg"
             color="secondary"
             link="/design"
           >
@@ -58,6 +60,7 @@
           <icon-card
             title="Build"
             icon="square"
+            image="/images/square.svg"
             color="tertiary"
             link="/build">
             Projects
