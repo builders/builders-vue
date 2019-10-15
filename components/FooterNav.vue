@@ -144,8 +144,10 @@
               xmlns="http://www.w3.org/2000/svg"
               >
               <g id="bldrs-icon">
-                <path d="M0,64 L0,0 L64,0 C81.673,0 96,14.327 96,32 C96,49.673 81.673,64 64,64 L0,64 Z" fill="#fff" style="opacity: 0.5; mix-blend-mode: lighten;"></path>
-                <path d="M0,96 L0,32 L64,32 C81.673,32 96,46.327 96,64 C96,81.673 81.673,96 64,96 L0,96 Z" fill="#fff" style="opacity: 0.5; mix-blend-mode: lighten;"></path>
+                <path class="white" d="M0,64 L0,0 L64,0 C81.673,0 96,14.327 96,32 C96,49.673 81.673,64 64,64 L0,64 Z" fill="#fff" style="opacity: 0.5; mix-blend-mode: lighten;"></path>
+                <path class="white" d="M0,96 L0,32 L64,32 C81.673,32 96,46.327 96,64 C96,81.673 81.673,96 64,96 L0,96 Z" fill="#fff" style="opacity: 0.5; mix-blend-mode: lighten;"></path>
+                <path class="color" d="M0,64 L0,0 L64,0 C81.673,0 96,14.327 96,32 C96,49.673 81.673,64 64,64 L0,64 Z" fill="#00ADEE" style="opacity: 1; mix-blend-mode: lighten;"></path>
+                <path class="color" d="M0,96 L0,32 L64,32 C81.673,32 96,46.327 96,64 C96,81.673 81.673,96 64,96 L0,96 Z" fill="#EB008B" style="opacity: 1; mix-blend-mode: lighten;"></path>
               </g>
             </svg>
           </a>
@@ -233,8 +235,17 @@ export default {
       float: left;
       margin-right: 1rem;
       opacity: 0.4;
+      .color {
+        display: none;
+      }
       &:hover {
         opacity: 1;
+        .color {
+          display: block;
+        }
+        .white {
+          display: none;
+        }
       }
     }
   }
