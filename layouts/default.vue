@@ -14,11 +14,6 @@ export default {
   components: {
     MainNav,
     FooterNav
-  },
-  head: {
-    htmlAttrs: {
-      class: 'has-navbar-fixed-top'
-    }
   }
 }
 </script>
