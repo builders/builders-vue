@@ -88,7 +88,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/css/variables.scss';
+@import '../assets/scss/variables.scss';
 #main-menu {
   .menu-imagine {
     &.navbar-item.has-dropdown:hover {

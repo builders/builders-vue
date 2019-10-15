@@ -168,7 +168,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/css/variables.scss';
+@import '../assets/scss/variables.scss';
 
 .footer-nav {
   background: #333;
