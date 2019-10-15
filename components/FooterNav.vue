@@ -137,6 +137,20 @@
           </a>
         </div>
         <p class="credit">
+          <a class="logo" href="https://builderscollective.com">
+            <svg
+              class="icon"
+              viewBox="0 0 96 96"
+              xmlns="http://www.w3.org/2000/svg"
+              >
+              <g id="bldrs-icon">
+                <path d="M0,64 L0,0 L64,0 C81.673,0 96,14.327 96,32 C96,49.673 81.673,64 64,64 L0,64 Z" fill="#fff" style="opacity: 0.5; mix-blend-mode: lighten;"></path>
+                <path d="M0,96 L0,32 L64,32 C81.673,32 96,46.327 96,64 C96,81.673 81.673,96 64,96 L0,96 Z" fill="#fff" style="opacity: 0.5; mix-blend-mode: lighten;"></path>
+                <path d="M0,64 L0,0 L64,0 C81.673,0 96,14.327 96,32 C96,49.673 81.673,64 64,64 L0,64 Z" fill="#00ADEE" style="mix-blend-mode: multiply;"></path>
+                <path d="M0,96 L0,32 L64,32 C81.673,32 96,46.327 96,64 C96,81.673 81.673,96 64,96 L0,96 Z" fill="#EB008B" style="mix-blend-mode: multiply;"></path>
+              </g>
+            </svg>
+          </a>
           A project of the&nbsp;
           <a href="https://builderscollective.com">
             builders collective
@@ -213,6 +227,16 @@ export default {
         &:hover {
           fill: #00aeef;
         }
+      }
+    }
+  }
+  .credit {
+    .logo {
+      float: left;
+      margin-right: 1rem;
+      opacity: 0.4;
+      &:hover {
+        opacity: 1;
       }
     }
   }
