@@ -3,30 +3,644 @@
 @import 'variables.scss';
 @import '../../node_modules/bulma/bulma.sass';
 
-.is-secondary,
-.has-text-secondary {
-  color: $secondary;
+:root {
+  --color1: #00ADEE;
+  --color2: #F5A623;
+  --color3: #EB008B;
 }
 
-.is-tertiary,
-.has-text-tertiary {
-  color: $tertiary;
+body {
+  font-family: "aktiv-grotesk", sans-serif;
 }
 
-.page-leave-active {
-  transition: all .5s ease;
-  opacity: 0;
+h1.title,
+h2.title {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 800;
 }
 
-.page-enter-active {
-  transition: all .5s ease;
+.column p {
+  margin-bottom: 1em;
 }
 
-.page-leave-to {
-  opacity: 0.2;
+.button {
+  border-radius: 0;
+  text-transform: uppercase;
+  transition: background-color .3s;
 }
 
-.page-enter,
-.page-leave {
-  opacity: 0;
+.button.is-medium {
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  padding: .5em 1.2em;
+  height: 2.82em;
+}
+
+.input {
+  border-radius: 0;
+}
+
+header.section {
+  padding-top: .75rem;
+}
+
+.brand {
+  margin-bottom: 6em;
+}
+
+.brand .column {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.brand .logo {
+  padding-top: 1.5rem;
+}
+
+.brand .tagline {
+  padding-bottom: 2rem;
+}
+
+.brand h1 {
+  margin-bottom: 1rem;
+}
+
+.brand h1 a {
+  display: block;
+  overflow: hidden;
+  text-indent: -100%;
+  width: 132px;
+  height: 24px;
+  background: url(/images/bldrs.svg);
+  background-size: 132px 24px;
+  transition: all .3s;
+}
+
+.brand p {
+  color: #ccc;
+  margin-bottom: 1rem;
+  transition: color .3s;
+}
+
+.brand:hover p {
+  color: #333;
+}
+
+.main-menu h2 {
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-weight: 900;
+  font-size: 2.8rem;
+  letter-spacing: -.2rem;
+}
+
+.main-menu .column {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.main-menu .menu-item-desc {
+  padding-bottom: 1rem;
+  transition: padding-top .3s;
+}
+
+.main-menu h2 a {
+  color: #ccc;
+  display: block;
+  transition: all .3s;
+}
+
+.main-menu h2 a:hover {
+  color: #000;
+
+}
+
+.card {
+  box-shadow: none;
+}
+
+.card .card-image {
+  transition: all .3s;
+  top: 0;
+}
+
+.card .image {
+  overflow: hidden;
+}
+
+.card-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card .meta {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 700;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  margin-top: 1.25em;
+}
+
+.card .meta a {
+  color: #999;
+}
+
+.card-imagine .meta a:hover {
+  color: var(--color1);
+}
+
+.card-design .meta a:hover {
+  color: var(--color2);
+}
+
+.card-build .meta a:hover {
+  color: var(--color3);
+}
+
+.card .meta a:active {
+  color: #000;
+}
+
+.content h3:not(:first-child) {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.card h3 a {
+  color: #000;
+  display: block;
+  border-bottom: 12px solid #000;
+  padding-bottom: 2em;
+  transition: all .3s;
+}
+
+.card-imagine h3 a {
+  border-color: var(--color1);
+}
+
+.card-design h3 a {
+  border-color: var(--color2);
+}
+
+.card-build h3 a {
+  border-color: var(--color3);
+}
+
+.card:hover h3 a {
+  border-color: #000;
+}
+
+.card-imagine:hover h3 a {
+  color: var(--color1);
+}
+
+.card-design:hover h3 a {
+  color: var(--color2);
+}
+
+.card-build:hover h3 a {
+  color: var(--color3);
+}
+
+.has-bg-img {
+  background-position: center center;
+  background-size: cover;
+}
+
+.section-image {
+  padding-top: 18rem;
+  padding-bottom: 0;
+  margin-bottom: 1.25rem;
+}
+
+.section-image .column {
+  background-color: #fff;
+  background-color: rgba(255,255,255,.9);
+  border-bottom: .75rem solid var(--color2);
+  padding: 2rem;
+}
+
+.section-image .section-body .title:not(.is-spaced)+.subtitle {
+  margin-top: 0;
+}
+
+.section figcaption {
+  padding-top: 1rem;
+}
+
+.img-border {
+  display: block;
+  position: relative;
+}
+
+.img-border::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  bottom: 0;
+  width: 12px;
+  background-color: var(--color1);
+}
+
+#build {
+  background-color: #f6f6f6;
+  padding-top: 0;
+  padding-bottom: 6rem;
+}
+
+#build .section-heading {
+  padding-top: 0;
+}
+
+#build .section-heading h2 {
+  border-top: 12px solid var(--color3);
+  padding-top: 3rem;
+}
+
+#build .column figure,
+#community .column figure {
+  display: block;
+}
+
+#build .image,
+#community .shape {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+#build .button {
+  background-color: var(--color3);
+}
+
+#build .button:hover {
+  background-color: #000;
+}
+
+#connect {
+  background-color: #FFFAE8;
+}
+
+#connect .button {
+  background-color: var(--color1);
+}
+
+#connect .button:hover {
+  background-color: #000;
+}
+
+#connect .input {
+  border-color: var(--color1);
+  border-color: rgba(244,166,36,.5);
+}
+
+#connect .input:focus {
+  border-color: var(--color1);
+  box-shadow: 0 0 0 0.125em rgba(244,166,36,.25);
+}
+
+.logo-icon {
+  display: block;
+  text-indent: -100%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: -3rem;
+  background: #fff url(/images/bldrs-icon.svg) no-repeat center center;
+  background-size: 40px 40px;
+  transition: all .2s;
+  overflow: hidden;
+}
+
+.logo-icon:hover {
+  background-size: 48px 48px;
+}
+
+.logo-outlines a {
+  display: block;
+  text-indent: -100%;
+  width: 177px;
+  height: 32px;
+  background-image: url(/images/bldrs-outlines.svg);
+  background-size: 177px 32px;
+  opacity: .5;
+  transition: all .3s;
+  overflow: hidden;
+}
+
+.logo-outlines a:hover {
+  opacity: 1;
+}
+
+.footer h2 {
+  color: #999;
+}
+
+.footer p {
+  color: #666;
+}
+
+.footer .site-info {
+  font-size: .75rem;
+  margin-top: 6em;
+  color: #444;
+}
+
+.footer .site-info a {
+  color: #666;
+}
+
+.footer .site-info a:hover {
+  color: #fff;
+}
+
+.footer .menu a {
+  font-weight: 600;
+  color: #999;
+  transition: color .3s;
+}
+
+.footer .menu .imagine a:hover {
+  color: var(--color1);
+}
+
+.footer .menu .design a:hover {
+  color: var(--color2);
+}
+
+.footer .menu .build a:hover {
+  color: var(--color3);
+}
+
+.footer .brands {
+  padding-top: 3rem;
+}
+
+.footer .social-network {
+  margin-top: 3rem;
+}
+
+.footer .social-network a {
+  color: #333;
+  transition: color .3s;
+}
+
+.footer .social-network .icon,
+.footer .social-network .icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.footer .social-network .icon {
+  margin-right: .75rem;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: #c32aa3;
+}
+
+.fa-vimeo:hover {
+  color: #1da1f2;
+}
+
+.fa-youtube:hover {
+  color: #f00;
+}
+
+.fa-pinterest:hover {
+  color: #bd081c;
+}
+
+.fa-behance:hover {
+  color: #1769ff;
+}
+
+.fa-github:hover {
+  color: #fff;
+}
+
+.fa-rss:hover {
+  color: #f26522;
+}
+
+
+@media screen and (min-width: 769px) {
+
+  .brand .column {
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .brand .logo,
+  .main-menu .menu-item {
+    border-right: 1px solid #333;
+  }
+
+  .brand h1 a:hover {
+    transform: scale(1.1);
+  }
+
+  .main-menu h2 {
+    font-size: 2.8rem;
+    text-align: right;
+  }
+
+  .main-menu .menu-item {
+    position: relative;
+  }
+
+  .main-menu .menu-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 3rem;
+    top: -4rem;
+    right: -7px;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .main-menu .menu-imagine .menu-item::after {
+    background-color: var(--color1);
+  }
+
+  .main-menu .menu-design .menu-item::after {
+    background-color: var(--color2);
+  }
+
+  .main-menu .menu-build .menu-item::after {
+    background-color: var(--color3);
+  }
+
+  .main-menu .menu-item:hover::after {
+    opacity: 1;
+    top: .5rem;
+  }
+
+  .main-menu .menu-item-desc {
+    padding-top: .4rem;
+  }
+
+  .menu-item-desc p {
+    position: relative;
+  }
+
+  .menu-item-desc p::after {
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    background-size: 48px 48px;
+    transition: all 0.3s ease;
+  }
+
+  .menu-imagine .menu-item-desc p::after {
+    background-image: url(/images/circle.svg);
+  }
+
+  .menu-design .menu-item-desc p::after {
+    background-image: url(/images/triangle.svg);
+  }
+
+  .menu-build .menu-item-desc p::after {
+    background-image: url(/images/square.svg);
+  }
+
+  .main-menu li:hover .menu-item-desc p::after {
+    transform: scale(1.2);
+  }
+
+  .card .image img {
+    transition: all 1.5s ease-in-out;
+  }
+
+  .card:hover .image img {
+    transform: scale(1.2);
+  }
+
+  .card:hover .card-image {
+    position: relative;
+    top: -.5em;
+  }
+
+  .card h3 a {
+    min-height: 15rem;
+    transition: all .3s;
+  }
+
+  .section-image {
+    padding-top: 32rem;
+    padding-bottom: 0;
+  }
+
+  .section-image .section-body {
+    padding: 0;
+  }
+
+  .section-image .columns.is-variable .column {
+    position: relative;
+    left: -2.25rem;
+    padding: 3rem;
+    width: calc(66.6666% + 2.25rem);
+  }
+
+  .section-image .column {
+    background-color: #fff;
+    border-left: .75rem solid var(--color2);
+    border-bottom: 0;
+  }
+
+  .section-image .section-body .subtitle {
+    color: #999;
+  }
+
+  #community a .shape {
+    transition: all .3s ease;
+  }
+
+  #community a:hover .shape {
+    transform: scale(1.1);
+  }
+
+  .footer .social-network {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (min-width: 1281px) {
+
+  .brand .column {
+    padding-top: 1.5rem;
+    padding-bottom: 6rem;
+  }
+
+  .brand h1,
+  .brand p {
+    display: block;
+    padding-right: 1.5rem;
+  }
+
+  .brand h1 a {
+    width: 176px;
+    height: 32px;
+    background-size: 176px 32px;
+  }
+
+  .brand p {
+    flex: 2;
+  }
+
+  .main-menu h2 {
+    font-size: 4.5rem;
+  }
+
+  .main-menu .menu-item-desc {
+    padding-top: 2.25rem;
+  }
+
+  .main-menu .menu-item::after {
+    height: 4rem;
+  }
+
+  .main-menu .menu-item:hover::after {
+    top: 1.75rem;
+  }
+
+  .menu-item-desc p::after {
+    width: 60px;
+    height: 60px;
+    top: -11px;
+    right: -6px;
+    background-size: 60px 60px;
+  }
+
+  .card h3 a {
+    min-height: 13rem;
+  }
+
+  .footer .social-network .icon,
+  .footer .social-network .icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .footer .social-network .icon {
+    margin-right: 1.5rem;
+  }
+
 }
